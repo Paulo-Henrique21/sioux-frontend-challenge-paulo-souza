@@ -52,7 +52,7 @@ async function fetchHomeData(): Promise<HomeData> {
 export default async function Home() {
   const data = await fetchHomeData();
 
-  const iconMap: Record<string, React.ComponentType<any>> = {
+  const iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
     "letter-text": ListTodo,
     "search": Search,
     "banknote-arrow-up": BanknoteArrowUp,

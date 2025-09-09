@@ -12,7 +12,7 @@ interface Solution {
 
 interface ServicesProps {
     solutions: Solution[];
-    iconMap: Record<string, React.ComponentType<any>>;
+    iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>>;
 }
 
 export default function Services( { solutions, iconMap }: ServicesProps ) {
